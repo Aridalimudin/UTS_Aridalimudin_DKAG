@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:layout_marginLeft="22dp"
+            android:backgroundTint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteY="-5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LifeSaver Bot"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ambulance"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="355dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/img_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="3dp"/>
+
+    <ImageView
+        android:id="@+id/chatt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="145dp"/>
+
+    <ImageView
+        android:id="@+id/chatt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt1"
+        android:src="@drawable/gambar2"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="90dp"/>
+
+    <ImageView
+        android:id="@+id/chatt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt2"
+        android:src="@drawable/gambar3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="300dp"/>
+
+    <ImageView
+        android:id="@+id/chatt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt3"
+        android:src="@drawable/gambar4"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="87dp"/>
+
+    <ImageView
+        android:id="@+id/chatt5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt4"
+        android:src="@drawable/gambar5"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="53dp"/>
+
+    <ImageView
+        android:id="@+id/chatt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt5"
+        android:src="@drawable/gambar3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="300dp" />
+
+    <ImageView
+        android:id="@+id/chatt7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt6"
+        android:src="@drawable/gambar6"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="90dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatt7"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/listimg"
+            android:text="Kecelakaan"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/listimg"
+            android:text="Serangan Jantung"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chatt7"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/listimg"
+            android:text="Reaksi Alergi"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/listimg"
+            android:text="Keracunan"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:background="@drawable/listimg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="140dp"
+        android:layout_below="@id/chatt7"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/img_18"
+        android:layout_marginTop="148dp"
+        android:layout_below="@id/chatt7"
+        android:layout_marginLeft="345dp"/>
+
+
+</RelativeLayout>
